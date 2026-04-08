@@ -1,0 +1,17 @@
+info = {}
+
+ism = input("Ismingiz: ")
+yosh = int(input("Yoshingiz: "))
+manzil = input("Manzilingiz: ")
+telefon = input("Telefon raqamingiz: ")
+
+if yosh < 18:
+    print("Siz tizimdan foydalana olmaysiz!")
+elif not ism or not manzil or not telefon:
+    print("Ma'lumot to'liq emas!")
+else:
+    info["ism"] = ism
+    info["yosh"] = yosh
+    info["manzil"] = manzil
+    info["telefon"] = telefon
+    print("Profil yaratildi:", info)
